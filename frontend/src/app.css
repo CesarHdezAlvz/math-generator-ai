@@ -1,0 +1,87 @@
+@import url('../css/tanker.css');
+@import url('../css/outfit.css');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --text-color: #ffffff;
+  --bg-color: #000000;
+  --accent-color-one: #14213d;
+  --accent-color-two: #fca311;
+  --accent-color-three: #e5e5e5;
+
+  --ff: "Tanker-Regular", sans-serif;
+  --ff2: "Outfit-Regular", sans-serif;
+  --p: 1rem/1.5em var(--ff2);
+  --h1: 700 3.8rem/1em var(--ff);
+  --h2: 600 3rem/1.1em var(--ff);
+  --h3: 500 2.45rem/1.2em var(--ff);
+  --h4: 600 1.95rem/1.3em var(--ff);
+  --h5: 500 1.5625rem/1.4em var(--ff);
+  --h6: 400 1.25rem/1.45em var(--ff);
+  --spacing0: 4px;
+  --spacing1: 8px;
+  --spacing2: 16px;
+  --spacing3: 24px;
+  --spacing4: 32px;
+  --spacing5: 64px;
+  --spacing6: 128px;
+  --spacing7: 256px;
+}
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body {
+  font: var(--p);
+  color: var(--text-color);
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+h5 {
+  font: var(--h5);
+}
+
+h6 {
+  font: var(--h6);
+}
+
+p {
+  font: var(--p);
+}
+
+img {
+  width: 100%;
+}
+
+button {
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
