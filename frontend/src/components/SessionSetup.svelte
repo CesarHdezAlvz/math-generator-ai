@@ -10,10 +10,10 @@
     let isGenerating = false;
 
     const operations = [
-        { id: 'addition', label: 'Addition (+)', icon: '➕' },
-        { id: 'subtraction', label: 'Subtraction (-)', icon: '➖' },
-        { id: 'multiplication', label: 'Multiplication (×)', icon: '✖️' },
-        { id: 'division', label: 'Division (÷)', icon: '➗' }
+        { id: 'addition', label: 'Addition (+)', icon: '+' },
+        { id: 'subtraction', label: 'Subtraction (-)', icon: '-' },
+        { id: 'multiplication', label: 'Multiplication (×)', icon: '×' },
+        { id: 'division', label: 'Division (÷)', icon: '÷' }
     ];
 
     function toggleOperation(operationId) {
@@ -118,9 +118,9 @@
         margin: 2rem auto;
         padding: 2rem;
         text-align: center;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, var(--accent-color-three) 0%, var(--text-color) 100%);
         border-radius: 20px;
-        color: white;
+        color: var(--accent-color-one);
         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
@@ -148,12 +148,12 @@
 
     .operation-btn {
         padding: 1rem;
-        border: 2px solid rgba(255,255,255,0.3);
-        background: rgba(255,255,255,0.1);
+        border: 2px solid var(--accent-color-three);
+        background: hsl(from var(--accent-color-one) h s l / 0.3);
         border-radius: 12px;
         cursor: pointer;
         transition: all 0.3s ease;
-        color: white;
+        color: var(--accent-color-one);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -168,11 +168,12 @@
     .operation-btn.selected {
         background: rgba(255,255,255,0.3);
         border-color: white;
-        box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+        box-shadow: 0 2px 8px var(--accent-color-one);
     }
 
     .icon {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        color: var(--accent-color-one);
     }
 
     .label {
@@ -192,7 +193,7 @@
     }
 
     .start-btn {
-        background: #28a745;
+        background: var(--accent-color-two);
         color: white;
         border: none;
         padding: 1rem 2rem;
@@ -201,13 +202,12 @@
         cursor: pointer;
         transition: all 0.3s ease;
         margin-top: 1rem;
-        box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
     }
 
     .start-btn:hover:not(:disabled) {
-        background: #218838;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+        background: var(--accent-color-two);
+        transform: scale(1.02);
+        box-shadow: 0 2px 10px hsl(from var(--accent-color-two) h s calc(l - 10));
     }
 
     .start-btn:disabled {

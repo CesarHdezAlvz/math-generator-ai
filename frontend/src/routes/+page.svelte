@@ -49,37 +49,14 @@
 </main>
 
 <style>
-    :global(body) {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     .app {
         min-height: 100vh;
         padding: 1rem;
+        background: linear-gradient(135deg, var(--bg-color) 0%, var(--accent-color-one) 100%);
     }
 
     .container {
         max-width: 1200px;
         margin: 0 auto;
-    }
-
-    :global(*) {
-        box-sizing: border-box;
-    }
-
-    :global(h1, h2, h3) {
-        margin-top: 0;
-    }
-
-    :global(button) {
-        font-family: inherit;
-    }
-
-    :global(input) {
-        font-family: inherit;
     }
 </style>

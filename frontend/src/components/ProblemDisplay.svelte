@@ -254,8 +254,8 @@
     .submit-btn {
         font-size: 1.3rem;
         padding: 1rem 2rem;
-        background: linear-gradient(45deg, #28a745, #20c997);
-        color: white;
+        background: linear-gradient(45deg, var(--accent-color-two) 0%, var(--accent-color-two) 100%);
+        color: var(--accent-color-three);
         border: none;
         border-radius: 12px;
         cursor: pointer;
@@ -316,8 +316,8 @@
     .next-btn {
         font-size: 1.2rem;
         padding: 1rem 2rem;
-        background: linear-gradient(45deg, #007bff, #6610f2);
-        color: white;
+        background: linear-gradient(45deg, var(--accent-color-two) 0%, var(--accent-color-two) 100%);
+        color: var(--accent-color-three);
         border: none;
         border-radius: 12px;
         cursor: pointer;
